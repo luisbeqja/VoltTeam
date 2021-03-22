@@ -1,0 +1,178 @@
+/*===========================
+    3. BANNER 
+===========================*/
+.banner-section {
+	background-color: $bg-color;
+	height: 1024px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	@media #{$lg} {
+		height: 900px;
+	}
+	@media #{$xs} {
+		height: 730px;
+	}
+	.banner-img {
+		width: 46%;
+		position: absolute;
+		right: 0;
+		top: 94px;
+		bottom: 90px;
+		left: auto;
+		background-size: cover;
+		background-position: center;
+		border: 20px solid $white;
+		border-right: 0;
+		box-shadow: 0px 0px 10px 0px rgba(4, 10, 50, 0.05);
+		border-top-left-radius: 427px;
+		@media #{$md} {
+			top: 100px;
+			bottom: 100px;
+			border-width: 10px;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	.banner-text {
+		position: relative;
+		&::before {
+			position: absolute;
+			right: 125px;
+			top: -90px;
+			content: url(../img/shape/04.png);
+			@media #{$tiny} {
+				right: 50px;
+			}
+		}
+		&::after {
+			position: absolute;
+			left: 50%;
+			bottom: -75px;
+			content: url(../img/shape/02.png);
+		}
+		@media #{$xs} {
+			margin-top: 150px;
+		}
+		h1 {
+			font-size: 140px;
+			font-weight: 800;
+			text-transform: uppercase;
+			line-height: 0.857;
+			@media #{$lg-1400} {
+				font-size: 110px;
+			}
+			@media #{$lg-1200} {
+				font-size: 90px;
+			}
+			@media #{$lg} {
+				font-size: 75px;
+			}
+			@media #{$md} {
+				font-size: 65px;
+			}
+			@media #{$xs} {
+				font-size: 60px;
+			}
+			@media #{$tiny} {
+				font-size: 48px;
+			}
+			span {
+				font-size: 58px;
+				font-weight: 600;
+				text-transform: none;
+				position: relative;
+				@media #{$lg} {
+					font-size: 40px;
+				}
+				@media #{$md} {
+					font-size: 35px;
+				}
+				@media #{$xs} {
+					font-size: 35px;
+				}
+				@media #{$tiny} {
+					font-size: 25px;
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: -7px;
+					width: 100%;
+					height: 3px;
+					background-color: #111111;
+				}
+			}
+		}
+		.banner-promo {
+			font-size: 30px;
+			color: #7a7a7a;
+			font-weight: 700;
+			display: inline-block;
+			margin-bottom: 40px;
+			position: relative;
+			line-height: 1.1;
+			@media #{$lg} {
+				font-size: 22px;
+			}
+			@media #{$md} {
+				font-size: 20px;
+				margin-bottom: 30px;
+			}
+			@media #{$xs} {
+				font-size: 20px;
+			}
+			&::after {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 1px;
+				width: 100%;
+				content: '';
+				background-color: #7a7a7a;
+			}
+			&::before {
+				position: absolute;
+				left: 0;
+				top: -60px;
+				content: url(../img/shape/01.png);
+			}
+		}
+		.banner-btn {
+			font-size: 14px;
+			font-weight: 600;
+			padding: 0 45px;
+			background-color: red;
+			color: white;
+			text-transform: uppercase;
+			display: inline-block;
+			margin-top: 80px;
+			line-height: 70px;
+			border-radius: 0;
+			border: none;
+			@include transition(0.3s);
+			@media #{$md} {
+				line-height: 55px;
+				padding: 0px 35px;
+			}
+			@media #{$xs} {
+				line-height: 55px;
+				padding: 0px 35px;
+			}
+			&:hover {
+				background-color: $secondary-color;
+			}
+		}
+	}
+	&::after {
+		position: absolute;
+		right: calc(46% - 30px);
+		bottom: 190px;
+		content: url(../img/shape/03.png);
+		@media #{$xs} {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+// Font Family
+$mon: 'Montserrat', sans-serif;
+// Colors ---------------
+$text-color: #6f6f6f;
+$heading-color: #1e1e1e;
+$primary-color: #f82538;
+$secondary-color: #16ad44;
+$third-color: #3b78f3;
+$white: #fff;
+$black: #000;
+$black-soft: #7e7e7e;
+$bg-color: #edf1fa;
+$bg-color-2: #e5f4e8;
+
+// Responsive Variables
+$lg-1700: '(min-width: 1700px)';
+$lg-1400: 'only screen and (min-width: 1400px) and (max-width: 1699px)';
+$lg-1200: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs: '(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xxs: '(max-width: 574px)';
+$tiny: '(max-width: 399px)';

@@ -1,0 +1,124 @@
+/*===========================
+    Portfolio
+===========================*/
+.portfolio-menu {
+	padding-top: 25px;
+	text-align: right;
+	@media #{$md} {
+		margin-top: 25px;
+		text-align: left;
+	}
+	@media #{$xs} {
+		margin-top: 25px;
+		text-align: left;
+	}
+	ul {
+		li {
+			display: inline-block;
+			cursor: pointer;
+			line-height: 40px;
+			color: $primary-color;
+			border: 1px solid #dcdfe2;
+			border-radius: 30px;
+			font-size: 15px;
+			font-weight: 600;
+			font-family: $mon;
+			padding: 0 38px;
+			margin-right: 15px;
+			@media #{$lg} {
+				padding: 0 28px;
+				margin-right: 10px;
+			}
+			@media #{$xs} {
+				padding: 0 12px;
+				font-size: 13px;
+				margin-right: 0;
+			}
+			@media #{$sm} {
+				padding: 0 26px;
+			}
+			@media #{$tiny} {
+				padding: 0 25px;
+				margin-bottom: 10px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			&.active {
+				background: $primary-color;
+				color: $white;
+				border-color: $primary-color;
+			}
+		}
+	}
+}
+.portfolio-boxes {
+	.row {
+		margin-right: -10px;
+		margin-left: -10px;
+		.col-lg-4 {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	.single-portfolio-box {
+		background-color: #c9c9c9;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		height: 420px;
+		margin-bottom: 20px;
+		position: relative;
+		&::after {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			content: '';
+			background-color: $black;
+			visibility: hidden;
+			opacity: 0;
+			@include transition(0.3s);
+		}
+		.portfolio-action {
+			position: absolute;
+			left: 50%;
+			top: 55%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			visibility: hidden;
+			opacity: 0;
+			@include transition(0.3s);
+			a {
+				height: 50px;
+				width: 50px;
+				background-color: $white;
+				line-height: 50px;
+				font-size: 14px;
+				color: $text-color;
+				border-radius: 50%;
+				text-align: center;
+				@include transition(0.3s);
+				&:hover {
+					background-color: $secondary-color;
+					color: $white;
+				}
+			}
+		}
+		&:hover {
+			&::after {
+				visibility: visible;
+				opacity: 0.7;
+			}
+			.portfolio-action {
+				visibility: visible;
+				opacity: 1;
+				top: 50%;
+			}
+		}
+		&.long {
+			height: 860px;
+		}
+	}
+}

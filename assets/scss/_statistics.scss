@@ -1,0 +1,38 @@
+/*===========================
+    8. Statistics
+===========================*/
+.statistics-section {
+	@media #{$xxs} {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	@media #{$tiny} {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.counter-boxes {
+		padding-left: 65px;
+		position: relative;
+		margin-bottom: 50px;
+		.counter-num {
+			position: absolute;
+			left: -8px;
+			top: 50%;
+			font-size: 50px;
+			line-height: 1.2;
+			transform: matrix(0, -1, 1, 0, 0, 0) translateX(50%);
+			-webkit-text-stroke: 1px $primary-color;
+			-webkit-text-fill-color: transparent;
+			@media #{$tiny} {
+				font-size: 40px;
+				left: 5px;
+			}
+		}
+		h3 {
+			font-size: 27px;
+			@media #{$tiny} {
+				font-size: 22px;
+			}
+		}
+	}
+}

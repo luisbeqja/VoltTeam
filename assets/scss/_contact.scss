@@ -1,0 +1,28 @@
+/*===========================
+    11. COntact
+===========================*/
+.contact-list {
+	@media #{$md} {
+		margin-bottom: 60px;
+	}
+	@media #{$xs} {
+		margin-bottom: 60px;
+	}
+	li {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 30px;
+		color: $heading-color;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		@media #{$xs} {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		i {
+			font-size: 24px;
+			margin-right: 20px;
+		}
+	}
+}

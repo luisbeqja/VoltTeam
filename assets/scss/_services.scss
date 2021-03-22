@@ -1,0 +1,74 @@
+/*===========================
+    6. Services 
+===========================*/
+.service-box {
+	padding: 50px 45px;
+	@include transition(0.3s);
+	border-bottom-right-radius: 30px;
+	background-color: $bg-color;
+	margin-bottom: 30px;
+	@media #{$sm} {
+		padding: 40px 20px;
+	}
+	@media #{$tiny} {
+		padding: 50px 30px;
+	}
+	.icon {
+		width: 86px;
+		height: 86px;
+		border-radius: 50%;
+		background-color: $primary-color;
+		margin-bottom: 40px;
+		color: $white;
+		position: relative;
+		margin-left: 5px;
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&::after {
+			position: absolute;
+			left: -5px;
+			bottom: -5px;
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			content: '';
+			border: 1px solid $primary-color;
+			border-radius: 50%;
+			opacity: 0.8;
+		}
+		&.secondary-color {
+			background-color: $secondary-color;
+			&::after {
+				border-color: $secondary-color;
+			}
+		}
+		&.third-color {
+			background-color: $third-color;
+			&::after {
+				border-color: $third-color;
+			}
+		}
+	}
+	h4 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	.link {
+		font-size: 14px;
+		color: $heading-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-top: 40px;
+		i {
+			margin-left: 10px;
+			font-size: 20px;
+			position: relative;
+			top: 3px;
+		}
+	}
+	&.active {
+		background-color: $bg-color-2;
+	}
+}

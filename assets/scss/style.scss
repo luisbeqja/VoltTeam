@@ -1,0 +1,42 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Cantus Agency HTML Template
+    Template URI: https://webtend.biz/cantus
+    Author: WebTend
+    Author URI: https://www.webtend.com
+    Version: 1.0
+
+    Note: This is Main Style Scss File. 
+-----------------------------------------------------------------------------------
+    CSS INDEX
+    ===================
+    01. Common
+    02. Header
+    03. Banner
+    04. Feature
+    05. About
+    06. Services
+    07. Team
+    08. Statistics
+    09. Testimonial
+    10. Latest Post
+    11. Contact
+    12. Footer
+    13. Blog
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'mixin';
+@import 'common';
+@import 'header';
+@import 'banner';
+@import 'feature';
+@import 'about';
+@import 'portfolio';
+@import 'services';
+@import 'team';
+@import 'statistics';
+@import 'testimonial';
+@import 'latest-post';
+@import 'contact';
+@import 'footer';
+@import 'blog';
