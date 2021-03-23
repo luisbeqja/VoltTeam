@@ -2227,6 +2227,24 @@ footer {
     height: 100px;
 }
 
+
+.mappa{
+    margin: auto;
+    width: 100%;
+}
+
+.imgCasco{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imgCasco img {
+    height: 600px;
+    margin:50px;
+}
+
 footer,
 footer p,
 footer a,
